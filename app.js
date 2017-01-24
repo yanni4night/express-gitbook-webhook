@@ -45,11 +45,11 @@ app.post(doc.route, function (req, res) {
             });
 
             ls.stdout.on('data', function (data) {
-                console.log(data);
+                console.log(data.toString());
             });
 
             ls.stderr.on('data', function (data) {
-                console.log(data);
+                console.log(data.toString());
             });
 
             ls.on('close', function (code) {
