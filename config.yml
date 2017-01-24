@@ -1,0 +1,3 @@
+route: /gitbook
+port: 8341
+root: ..
