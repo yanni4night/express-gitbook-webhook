@@ -19,11 +19,12 @@ var spawn = require('child_process').spawn;
 
 var app = express();
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-var doc
+var doc;
 
 try {
     doc = yaml.safeLoad(fs.readFileSync(__dirname + '/config.yml', 'utf8'));
