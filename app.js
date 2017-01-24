@@ -40,7 +40,7 @@ app.post(doc.route, function (req, res) {
             var name = body.project.name.toLowerCase();
             var url = body.project.http_url;
             var root = path.join(__dirname, doc.root);
-            var ls = spawn('sh', ['deplay.sh', name, url, root], {
+            var ls = spawn('sh', ['deploy.sh', name, url, root], {
                 cwd: __dirname
             });
 
