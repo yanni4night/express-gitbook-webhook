@@ -4,9 +4,10 @@
  *
  * changelog
  * 2017-01-24[12:04:12]:revised
+ * 2017-02-10[13:42:28]:/
  *
  * @author yanni4night@gmail.com
- * @version 0.1.0
+ * @version 0.1.2
  * @since 0.1.0
  */
 
@@ -32,6 +33,10 @@ try {
     process.stderr.write('Load config.yml failed!');
     process.exit(-1);
 }
+
+app.all('/', function (req, res) {
+    res.send('ready');
+});
 
 app.post(doc.route, function (req, res) {
     if (req.headers['x-gitlab-event'] === 'Push Hook') {

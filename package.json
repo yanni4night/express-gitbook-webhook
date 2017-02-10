@@ -1,6 +1,6 @@
 {
   "name": "express-gitbook-webhook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gitbook webhook by express.js",
   "main": "app.js",
   "scripts": {
@@ -23,8 +23,8 @@
   "homepage": "https://github.com/yanni4night/express-gitbook-webhook#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
-    "express": "^4.14.0",
+    "express": "^4.14.1",
     "forever": "^0.15.3",
-    "js-yaml": "^3.7.0"
+    "js-yaml": "^3.8.1"
   }
 }
